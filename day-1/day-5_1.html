@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>food store</title>
+    </head>
+
+    <body>
+
+        <h1>Food Order Form</h1>
+
+        <form>
+            <label for="name">Customer Name:</label>
+            <br>
+            <input type="text" id="name" name="name" placeholder="name" required>
+            <br><br>
+            <label for="address">Delivery Address:</label>
+            <br>
+            <textarea id="address" name="address" rows="5" cols="30"></textarea>
+            <br><br>
+
+            <h2>Selection Food Type</h2>
+
+            <input type="checkbox" id="pizza" name="food" value="pizza">
+            <label for="pizza">Pizza</label>
+            <br>
+            <input type="checkbox" id="burger" name="food" value="burger">
+            <label for="burger">Burger</label>
+            <br>
+            <input type="checkbox" id="biryani" name="food" value="biryani">
+            <label for="biryani">Biryani</label>
+            <br><br>
+
+            <h2>Select Payment Method</h2>
+
+            <input type="radio" id="cash" name="payment" value="cash">
+            <label for="cash">Cash On Delivery</label>
+            <br>
+            <input type="radio" id="card" name="payment" value="card">
+            <label for="card">Credit/Debit Card</label>
+            <br>
+            <input type="radio" id="upi" name="payment" value="upi">
+            <label for="upi">UPI</label>
+            <br><br>
+
+            <label for="date">Delivery Date:</label>
+            <input type="date" id="date" name="date" required>
+            <br><br>
+
+            <label for="quantity">Number of Quantity:</label>
+            <input type="number" id="quantity" name="quantity" min="2" max="20" value="2" required>
+            <br><br>
+
+            <label for="file">Upload File:</label>
+            <input type="file" id="file" name="file">
+            <br><br>
+
+            <button type="submit">Place Order</button>
+            
+            <button type="reset">Clear Form</button>
+        </form>
+    </body>
+</html>
