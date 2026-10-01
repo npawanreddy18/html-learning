@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>food</title>
+    </head>
+
+    <body>
+        <h1>Food Delivery Store</h1>
+        <P>fresh food delivered to your doorstep</P>
+         <hr>
+
+        <nav>
+            <a href="home">Home</a>
+            <a href="menu">Menu</a>
+            <a href="cart">Cart</a>
+            <a href="order">My Order</a>
+        </nav>
+
+        <hr>
+
+        <main>
+            <selection id="menu">
+                <h2>🍽️ Popular Foods</h2>
+                <p>Choose your Favorite Food</p>
+
+                <hr>
+
+                <div class="food-card">
+                    <h3>🍕Pizza</h3>
+                    <p>Cheese Pizza</p>
+                    <p>Price:<span>&#8377;299</span></p>
+                    <button>Add to Cart</button>
+                </div>
+
+                <div class="food-card">
+                    <h3>🍔 Burger</h3>
+                    <p>Veg-Burger</p>
+                    <p>Price:<span>&#8377;199</span></p>
+                    <button>Add to cart</button>
+                </div>
+
+                <div class="food-card">
+                    <h3>🍛Biryani</h3>
+                    <p>Chicken Biryani</p>
+                    <p>Price:<span>&#8377;159</span></p>
+                    <button>Add to Cart</button>
+                </div>
+
+            </selection>
+            <hr>
+
+            <aside>
+                    <h2>🔥Special Offer</h2>
+                    <p>Get<span>20% OFF </span>On Your First Order!</p>
+            </aside>
+
+            <section>
+                <h2>🛒 Food Order Form</h2>
+                <form>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Name" required>
+                    <br><br>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Email" required>
+                    <br><br>
+                    <label for="address">Add Your Address:</label><br>
+                    <textarea id="address" name="address" rows="4" cols="40" placeholder="Address" required></textarea>
+                    <hr>
+
+                    <h3>Select Your Food</h3>
+                    <input type="checkbox" id="pizza" name="food" value="pizza">
+                    <label for="pizza">Pizza</label>
+                    <br>
+                    <input type="checkbox" id="burger" name="food" value="burger">
+                    <label for="burger">Burger</label>
+                    <br>
+                    <input type="checkbox" id="biryani" name="food" value="biryani">
+                    <label for="biryani">Biryani</label>
+                    <br><br>
+
+                    <h3>Payment Method</h3>
+                    <input type="radio" id="cash" name="payment" value="cash">
+                    <label for="cash">Cash</label>
+                    <br>
+                    <input type="radio" id="card" name="payment" value="card">
+                    <label for="card">Card</label>
+                    <br>
+                    <input type="radio" id="upi" name="payment" value="upi">
+                    <label for="upi">UPI</label>
+                    <br><br>
+
+
+                    <label for="date">Delivery Date:</label>
+                    <input type="date" id="date" name="date" required>
+                    <br><br>
+
+                    <label for="quantity">Quantity:</label>
+                    <input type="number" id="quantity" name="quantity" min="1" max="10" value="1" required>
+                    <br><br>
+
+                    <label for="file">Upload File</label>
+                    <input type="file" id="file" name="file">
+                    <br><br>
+
+                    <button type="submit">Place Order</button>
+                    <button type="reset">Reset</button>
+
+                </form>
+            </section>
+            <hr>
+
+            <artical>
+                <h2>🍕 Today's Special</h2>
+                <p>Our Special Cheese Pizza is Made With Fresh Vegitables and Mozzarella Cheese.</p>
+                <p>Price:<span>&#8377;299</span></p>
+                <hr>
+
+                <section>
+                    <h2>🎵Over Food Music</h2>
+                    <audio controls>
+                        <source src="food.mp3" type="audio/mpeg">
+                    </audio>
+                </section>
+
+                <section>
+                    <h2>🎬How we Propare Food</h2>
+                    <video controls width=300 poster="food.jpg">
+                        <source src="food-mp4" type="video/mp4">
+                    </video>
+                </section>
+            </artical>
+        </main>
+        <hr>
+
+        <footer id="contact">
+            <h2>Food Delivery Store</h2>
+            <p>Contact us: 123-456-7890</p>
+            <p>Email: fooddeliverystore@gmail.com</p>
+            <p>&copy;2026 Food Delivery Store. All rights reserved.</p>
+
+        </footer>
+    </body>
+</html>
